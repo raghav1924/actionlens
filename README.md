@@ -53,6 +53,7 @@ flowchart TD
 - 🛠️ **Automated Auto-Hardener (`actionlens fix`):** Non-destructively patches workflow files by injecting least-privilege permissions, concurrency cancel-in-progress blocks, job timeouts, and modern action versions.
 - 🎨 **Dark-Mode Visual Studio:** Self-contained, responsive dashboard running on `http://localhost:5252` with live Mermaid DAG previews and one-click fixes.
 - 🚀 **Zero External Dependencies:** Built with pure TypeScript and Node.js built-ins (`node:fs`, `node:path`, `node:http`, `node:crypto`).
+- 📖 **Documentation & Guides:** Explore [ARCHITECTURE.md](ARCHITECTURE.md), [docs/CHEATSHEET.md](docs/CHEATSHEET.md), [docs/SECURITY_HARDENING_GUIDE.md](docs/SECURITY_HARDENING_GUIDE.md), [docs/CI_PERFORMANCE_RECIPES.md](docs/CI_PERFORMANCE_RECIPES.md), and [docs/FAQ.md](docs/FAQ.md).
 
 ---
 
