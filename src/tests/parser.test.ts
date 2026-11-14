@@ -90,4 +90,32 @@ describe('WorkflowParser AST & YAML Lexer', () => {
     assert.deepStrictEqual(job.matrix!['node'], [18, 20, 22]);
     assert.deepStrictEqual(job.matrix!['os'], ['ubuntu-latest', 'macos-latest']);
   });
+
+  it('normalizes string and object concurrency syntax properly', () => {
+    const stringConcurrencyYaml = `
+      name: String Concurrency
+      concurrency: my-ci-queue
+      jobs:
+        test:
+          steps:
+            - run: npm test
+    `;
+    const parsedStr = WorkflowParser.parse(stringConcurrencyYaml);
+    assert.strictEqual(parsedStr.concurrency?.group, 'my-ci-queue');
+    assert.strictEqual(parsedStr.concurrency?.cancelInProgress, false);
+
+    const objectConcurrencyYaml = `
+      name: Object Concurrency
+      concurrency:
+        group: pr-\${{ github.ref }}
+        cancel-in-progress: true
+      jobs:
+        test:
+          steps:
+            - run: npm test
+    `;
+    const parsedObj = WorkflowParser.parse(objectConcurrencyYaml);
+    assert.strictEqual(parsedObj.concurrency?.group, 'pr-${{ github.ref }}');
+    assert.strictEqual(parsedObj.concurrency?.cancelInProgress, true);
+  });
 });
