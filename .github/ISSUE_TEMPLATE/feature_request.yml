@@ -1,0 +1,24 @@
+name: Feature Request
+description: Suggest an idea or enhancement for ActionLens
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve ActionLens!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your request related to a GitHub Actions linter or CI performance problem?
+      description: Explain what scenario or trigger you want supported.
+      placeholder: When optimizing reusable workflows or matrix builds...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution or Rule
+      description: How should ActionLens detect or resolve this?
+    validations:
+      required: true
