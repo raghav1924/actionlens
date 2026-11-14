@@ -1,0 +1,37 @@
+{
+  "name": "actionlens",
+  "version": "1.0.0",
+  "description": "Developer-first GitHub Actions Workflow Linter, Security Auditor, CI/CD Optimizer & Visual Pipeline Studio.",
+  "main": "dist/index.js",
+  "bin": {
+    "actionlens": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "start": "node dist/bin.js studio",
+    "test": "node --test dist/tests/**/*.test.js"
+  },
+  "keywords": [
+    "github-actions",
+    "ci-cd",
+    "linter",
+    "security-scanner",
+    "devops",
+    "workflow-auditor",
+    "dag",
+    "pipeline-optimizer",
+    "developer-tools",
+    "cli"
+  ],
+  "author": "Jatin Sharma <raghavjatin245@gmail.com> (https://jatinsh.netlify.app/)",
+  "homepage": "https://jatinsh.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raghav1924/actionlens.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

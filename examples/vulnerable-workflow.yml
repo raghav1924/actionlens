@@ -1,0 +1,22 @@
+name: Auto Issue Responder
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Process issue title
+        run: |
+          echo "Processing issue: ${{ github.event.issue.title }}"
+          echo "Body: ${{ github.event.issue.body }}"
+
+      - name: Notify external service
+        uses: thirdparty/slack-notifier@v1
+        with:
+          channel: dev-alerts
