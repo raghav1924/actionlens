@@ -42,5 +42,18 @@ describe('WorkflowGraph DAG & Topology Analyzer', () => {
     assert.ok(dag.mermaid.startsWith('flowchart LR'));
     assert.ok(dag.mermaid.includes('build --> test'));
   });
+
+  it('handles empty jobs dictionary and standalone isolated jobs', () => {
+    const emptyDag = WorkflowGraph.buildDag({});
+    assert.strictEqual(emptyDag.nodes.length, 0);
+    assert.strictEqual(emptyDag.maxParallelJobs, 0);
+
+    const singleJobDag = WorkflowGraph.buildDag({
+      standalone: { id: 'standalone', name: 'Isolated Job', steps: [], line: 1 },
+    });
+    assert.strictEqual(singleJobDag.nodes.length, 1);
+    assert.strictEqual(singleJobDag.maxParallelJobs, 1);
+    assert.strictEqual(singleJobDag.criticalPath[0], 'standalone');
+  });
 });
 
