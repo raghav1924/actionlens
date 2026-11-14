@@ -20,3 +20,4 @@ Author: [Jatin Sharma](https://jatinsh.netlify.app/) (`@raghav1924`)
 
 ### Q: Does ActionLens send my workflow files or secrets to any external server?
 **A:** **No.** ActionLens runs 100% locally with zero external npm dependencies and zero external network calls.
+
