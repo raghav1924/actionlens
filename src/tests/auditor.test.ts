@@ -115,5 +115,21 @@ describe('WorkflowAuditor Security & Performance Heuristics', () => {
     assert.strictEqual(parsedBack.workflowName, 'Sample');
     assert.ok(Array.isArray(parsedBack.findings));
   });
+
+  it('flags unfiltered push triggers that run on documentation changes', () => {
+    const yaml = `
+      name: Bare Push
+      on:
+        push: {}
+      jobs:
+        test:
+          runs-on: ubuntu-latest
+          steps:
+            - run: npm test
+    `;
+    const parsed = WorkflowParser.parse(yaml);
+    const report = WorkflowAuditor.audit(parsed);
+    assert.ok(report.findings.some(f => f.id === 'REL-002'), 'Flags bare push trigger without paths filter');
+  });
 });
 
