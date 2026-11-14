@@ -131,5 +131,22 @@ describe('WorkflowAuditor Security & Performance Heuristics', () => {
     const report = WorkflowAuditor.audit(parsed);
     assert.ok(report.findings.some(f => f.id === 'REL-002'), 'Flags bare push trigger without paths filter');
   });
+
+  it('detects deprecated artifact upload and download action versions', () => {
+    const yaml = `
+      name: Artifact Build
+      jobs:
+        archive:
+          steps:
+            - uses: actions/upload-artifact@v2
+              with:
+                name: dist
+                path: ./dist
+    `;
+    const parsed = WorkflowParser.parse(yaml);
+    const report = WorkflowAuditor.audit(parsed);
+    const finding = report.findings.find(f => f.id === 'OPT-004');
+    assert.ok(finding, 'Flags deprecated actions/upload-artifact@v2');
+  });
 });
 
