@@ -13,3 +13,4 @@ All notable changes to **ActionLens** will be documented in this file.
 - CLI commands (`audit`, `fix`, `dag`, `studio`, `version`, `help`) with exit-code quality gates.
 - 100% test pass rate across 12 comprehensive unit test suites.
 - Author attribution and portfolio integration for [Jatin Sharma](https://jatinsh.netlify.app/).
+

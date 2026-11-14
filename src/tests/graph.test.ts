@@ -43,3 +43,4 @@ describe('WorkflowGraph DAG & Topology Analyzer', () => {
     assert.ok(dag.mermaid.includes('build --> test'));
   });
 });
+

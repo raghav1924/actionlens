@@ -55,3 +55,4 @@ jobs:
     assert.strictEqual(result.appliedFixes.length, 0, 'No modifications needed for compliant workflow');
   });
 });
+

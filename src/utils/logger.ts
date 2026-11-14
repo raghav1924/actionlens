@@ -25,3 +25,4 @@ export const Logger = {
   },
   divider: () => console.log(`${colors.gray}────────────────────────────────────────────────────────${colors.reset}`),
 };
+

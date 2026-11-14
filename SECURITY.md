@@ -13,3 +13,4 @@ Please include:
 3. Potential impact on CI runners or repository secrets.
 
 We will acknowledge receipt within 24 hours and provide an estimated remediation timeline.
+

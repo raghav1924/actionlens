@@ -99,3 +99,4 @@ describe('WorkflowAuditor Security & Performance Heuristics', () => {
     assert.strictEqual(report.score, 100);
   });
 });
+

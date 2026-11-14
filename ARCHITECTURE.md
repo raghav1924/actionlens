@@ -73,3 +73,4 @@ ActionLens operates with zero third-party dependencies, implementing an indentat
 - Non-destructively injects least-privilege `permissions:` and `concurrency:` groups.
 - Adds `timeout-minutes: 15` to jobs lacking ceilings.
 - Automatically upgrades legacy Node 12/16/18 actions (`actions/checkout@v2` -> `@v4`).
+

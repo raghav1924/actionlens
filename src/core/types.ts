@@ -93,3 +93,4 @@ export interface WorkflowAuditReport {
     maxParallelJobs: number;
   };
 }
+

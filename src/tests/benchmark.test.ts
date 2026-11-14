@@ -67,3 +67,4 @@ jobs:
     assert.ok(duration < 50, `DAG computation took ${duration.toFixed(2)}ms`);
   });
 });
+

@@ -29,3 +29,4 @@ npm start
 2. Add comprehensive unit tests in `src/tests/` for any new audit heuristics or parser enhancements.
 3. Keep the codebase strictly zero-dependency (rely solely on Node.js built-ins).
 4. Adhere to conventional commit messages (`feat:`, `fix:`, `docs:`, `test:`, `ci:`).
+

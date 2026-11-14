@@ -12,3 +12,4 @@ Explain the changes made and the motivation behind them.
 - [ ] I have added unit tests in `src/tests/` covering new scenarios.
 - [ ] All tests pass (`npm test`).
 - [ ] TypeScript compiles cleanly (`npm run build`).
+

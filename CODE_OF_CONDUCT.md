@@ -17,3 +17,4 @@ diverse, inclusive, and healthy community.
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to [Jatin Sharma](https://jatinsh.netlify.app/) at `raghavjatin245@gmail.com`.
 All complaints will be reviewed and investigated promptly and fairly.
+

@@ -20,3 +20,4 @@ jobs:
         uses: thirdparty/slack-notifier@v1
         with:
           channel: dev-alerts
+

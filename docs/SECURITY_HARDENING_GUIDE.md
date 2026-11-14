@@ -68,3 +68,4 @@ Mutable tags (`@v1`, `@main`) can be redirected if a maintainer account is compr
 ```yaml
 - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
 ```
+
