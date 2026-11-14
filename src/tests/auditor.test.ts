@@ -98,5 +98,22 @@ describe('WorkflowAuditor Security & Performance Heuristics', () => {
     assert.strictEqual(report.grade, 'A+');
     assert.strictEqual(report.score, 100);
   });
+
+  it('produces valid JSON-serializable report objects', () => {
+    const yaml = `
+      name: Sample
+      jobs:
+        sample:
+          steps:
+            - run: echo "hello"
+    `;
+    const parsed = WorkflowParser.parse(yaml);
+    const report = WorkflowAuditor.audit(parsed);
+    const serialized = JSON.stringify(report);
+    assert.ok(serialized.length > 50);
+    const parsedBack = JSON.parse(serialized);
+    assert.strictEqual(parsedBack.workflowName, 'Sample');
+    assert.ok(Array.isArray(parsedBack.findings));
+  });
 });
 
