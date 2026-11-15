@@ -14,3 +14,9 @@ All notable changes to **ActionLens** will be documented in this file.
 - 100% test pass rate across 12 comprehensive unit test suites.
 - Author attribution and portfolio integration for [Jatin Sharma](https://jatinsh.netlify.app/).
 
+
+## [1.1.0] - 2026-11-15
+### Added
+- Script injection and pull_request_target security analysis guides.
+- Pipeline DAG critical path topology documentation.
+- Automated workflow hardening specifications and FAQ.
