@@ -20,3 +20,9 @@ All notable changes to **ActionLens** will be documented in this file.
 - Script injection and pull_request_target security analysis guides.
 - Pipeline DAG critical path topology documentation.
 - Automated workflow hardening specifications and FAQ.
+
+## [1.2.0] - 2026-11-16
+### Added
+- Master design system documentation (Bento Grid, Cybercore).
+- CI/CD supply chain attack vector analysis and SHA pinning guidelines.
+- Pipeline concurrency optimization guide and CLI cheatsheet.
