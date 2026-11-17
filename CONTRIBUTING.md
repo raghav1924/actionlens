@@ -1,32 +1,31 @@
-# Contributing to ActionLens
+# Contributing to actionlens
 
-Thank you for your interest in improving **ActionLens**!
+Thank you for your interest in contributing to **actionlens**! We welcome bug fixes, documentation improvements, and feature proposals.
 
-Author: [Jatin Sharma](https://jatinsh.netlify.app/) (`@raghav1924`)
+## Development Workflow
 
-## Development Setup
+1. Fork the repository and create your feature branch:
+   ```bash
+   git checkout -b feature/amazing-feature
+   ```
+2. Install dependencies and ensure strict type-checking passes:
+   ```bash
+   npm run build
+   ```
+3. Run test suites:
+   ```bash
+   npm test
+   ```
+4. Commit your changes using Conventional Commits:
+   - `feat:` for new capabilities
+   - `fix:` for bug fixes
+   - `docs:` for documentation updates
+   - `test:` for test additions
 
-ActionLens has **zero external dependencies**. All you need is Node.js (v18+) and TypeScript.
+## Code Quality Standards
+- Pure TypeScript with strict mode enabled.
+- Zero external runtime npm dependencies whenever feasible.
+- Comprehensive test coverage for all parsing, calculations, and execution paths.
 
-```bash
-# Clone the repository
-git clone https://github.com/raghav1924/actionlens.git
-cd actionlens
-
-# Compile TypeScript
-npm run build
-
-# Run unit tests
-npm test
-
-# Run local web studio
-npm start
-```
-
-## Pull Request Guidelines
-
-1. Ensure all tests pass (`npm test`).
-2. Add comprehensive unit tests in `src/tests/` for any new audit heuristics or parser enhancements.
-3. Keep the codebase strictly zero-dependency (rely solely on Node.js built-ins).
-4. Adhere to conventional commit messages (`feat:`, `fix:`, `docs:`, `test:`, `ci:`).
-
+---
+*Maintained by [Jatin Sharma](https://jatinsh.netlify.app/)*
