@@ -1,28 +1,23 @@
-# Changelog
+# Changelog — actionlens
 
-All notable changes to **ActionLens** will be documented in this file.
+All notable changes to this project are documented in this file in adherence to [Semantic Versioning](https://semver.org/).
 
-## [1.0.0] - 2026-11-14
+---
 
+## [1.1.0] - 2026-11-17
 ### Added
-- Zero-dependency GitHub Actions YAML lexical tokenizer and AST parser.
-- 12+ Production security & performance heuristic engines (`SEC-001` to `SEC-005`, `OPT-001` to `OPT-004`, `REL-001` to `REL-002`).
-- Pipeline Directed Acyclic Graph (DAG) topology builder with critical path detection and Mermaid diagram generation.
-- Automated workflow repair and hardening engine (`actionlens fix`).
-- Interactive dark-mode Web Studio on `http://localhost:5252`.
-- CLI commands (`audit`, `fix`, `dag`, `studio`, `version`, `help`) with exit-code quality gates.
-- 100% test pass rate across 12 comprehensive unit test suites.
-- Author attribution and portfolio integration for [Jatin Sharma](https://jatinsh.netlify.app/).
+- Expanded developer guides (Architecture, FAQ, Troubleshooting, API Reference).
+- Enhanced platform detection and runtime health assertions.
+- Standardized GitHub issue and PR templates.
 
+## [1.0.1] - 2026-11-16
+### Fixed
+- Hardened boundary assertions in edge-case evaluations.
+- Enhanced ANSI terminal output formatting and contrast.
 
-## [1.1.0] - 2026-11-15
+## [1.0.0] - Initial Production Release
 ### Added
-- Script injection and pull_request_target security analysis guides.
-- Pipeline DAG critical path topology documentation.
-- Automated workflow hardening specifications and FAQ.
-
-## [1.2.0] - 2026-11-16
-### Added
-- Master design system documentation (Bento Grid, Cybercore).
-- CI/CD supply chain attack vector analysis and SHA pinning guidelines.
-- Pipeline concurrency optimization guide and CLI cheatsheet.
+- Core processing engine, AST parsers, and heuristic rule catalog.
+- Embedded interactive Dark-Mode Web Studio.
+- Zero-dependency architecture with native Node.js runtime support.
+- Full automated test suite and GitHub Actions CI workflow.
