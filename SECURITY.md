@@ -1,16 +1,21 @@
-# Security Policy
+# Security Policy for actionlens
 
-## Reporting Security Issues
+## Supported Versions
 
-We take the security of ActionLens seriously. If you believe you have found a security vulnerability, please report it directly via email:
+| Version | Supported          |
+| ------- | ------------------ |
+| 1.0.x   | :white_check_mark: |
 
-- **Security Contact:** [Jatin Sharma](https://jatinsh.netlify.app/)
-- **Email:** `raghavjatin245@gmail.com`
+## Reporting Vulnerabilities
 
-Please include:
-1. Description of the vulnerability.
-2. Steps to reproduce or sample workflow trigger.
-3. Potential impact on CI runners or repository secrets.
+If you discover a security vulnerability in **actionlens**, please do not open a public issue. Instead, report it directly to the maintainer:
 
-We will acknowledge receipt within 24 hours and provide an estimated remediation timeline.
+- **Email:** [raghavjatin245@gmail.com](mailto:raghavjatin245@gmail.com)
+- **Maintainer:** Jatin Sharma ([https://jatinsh.netlify.app/](https://jatinsh.netlify.app/))
 
+Please provide:
+1. Detailed description of the vulnerability.
+2. Reproduction steps or proof of concept.
+3. Potential impact and proposed mitigations.
+
+We will acknowledge receipt within 24 hours and provide an estimated disclosure and patch timeline.
